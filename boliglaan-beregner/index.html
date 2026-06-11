@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boliglånsberegner: Hvad kan du låne? Gratis og uden oplysninger | Kredithjørnet</title>
+  <meta name="description" content="Gratis boliglånsberegner: Indtast boligpris og udbetaling og se fordelingen på realkreditlån, banklån og udbetaling — samt vejledende månedlig ydelse.">
+  <link rel="canonical" href="https://kredithjornet.dk/boliglaan-beregner/">
+  <meta property="og:title" content="Boliglånsberegner: Hvad kan du låne? Gratis og uden oplysninger | Kredithjørnet">
+  <meta property="og:description" content="Gratis boliglånsberegner: Indtast boligpris og udbetaling og se fordelingen på realkreditlån, banklån og udbetaling — samt vejledende månedlig ydelse.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kredithjornet.dk/boliglaan-beregner/">
+  <meta property="og:locale" content="da_DK">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Kredithjørnet<span class="dot"></span></a>
+      <div class="nav-links">
+        <a href="/boliglaan-selvstaendig/">Selvstændig</a>
+        <a href="/skifte-bank-boliglaan/">Bankskifte</a>
+        <a href="/omlaegge-realkreditlaan/">Omlægning</a>
+        <a href="/boliglaan-beregner/" aria-current="page">Beregner</a>
+      </div>
+      <!-- TODO: Erstat href med Adtraction-trackinglink når godkendt -->
+      <a href="https://www.mybanker.dk/" rel="nofollow sponsored" target="_blank" class="btn-primary btn-sm">Sammenlign lån gratis →</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="article-hero">
+      <div class="article-hero-inner">
+        <p class="breadcrumb"><a href="/">Forside</a> / Boliglånsberegner</p>
+        <h1>Boliglånsberegner: Hvad kan du låne — og hvad koster det om måneden?</h1>
+        <p class="lead">
+          Indtast boligpris og udbetaling, og se med det samme, hvordan finansieringen typisk
+          fordeler sig — og hvad den vejledende månedlige ydelse lander på.
+        </p>
+      </div>
+    </header>
+
+    <section class="article-body">
+      <div class="container">
+
+        <div class="calc">
+          <div>
+            <label for="pris">Boligens pris</label>
+            <input type="text" id="pris" inputmode="numeric" value="3.000.000" autocomplete="off">
+
+            <label for="udbetaling">Din udbetaling</label>
+            <input type="text" id="udbetaling" inputmode="numeric" value="300.000" autocomplete="off">
+            <p class="calc-warning" id="udb-warn"></p>
+
+            <label for="rente">Vejledende rente <span class="label-value" id="rente-vis">4,0 %</span></label>
+            <input type="range" id="rente" min="1" max="8" step="0.1" value="4">
+
+            <label for="loebetid">Løbetid <span class="label-value" id="aar-vis">30 år</span></label>
+            <input type="range" id="loebetid" min="10" max="30" step="1" value="30">
+          </div>
+
+          <div class="calc-result" aria-live="polite">
+            <h3>Vejledende månedlig ydelse</h3>
+            <p class="big"><span id="res-ydelse">—</span> <small>kr./md. før skat</small></p>
+            <div class="calc-rows">
+              <div class="calc-row"><span>Samlet lånebehov</span><strong id="res-laan">—</strong></div>
+              <div class="calc-row"><span>Realkreditlån (op til 80 %)</span><strong id="res-realkredit">—</strong></div>
+              <div class="calc-row"><span>Banklån / øvrig finansiering</span><strong id="res-banklaan">—</strong></div>
+              <div class="calc-row"><span>Udbetaling</span><strong id="res-udbetaling">—</strong></div>
+            </div>
+            <p class="calc-disclaimer">
+              Beregningen er vejledende og er ikke et lånetilbud. Den anvender én samlet rente og
+              medregner ikke bidragssats, gebyrer, kurstab eller afdragsfrihed. Alle udregninger
+              sker i din browser — intet gemmes eller sendes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <article class="article-body" style="padding-top:8px;">
+      <div class="container-narrow">
+
+        <h2>Sådan er et boligkøb typisk finansieret</h2>
+        <p>
+          Danske boligkøb finansieres som hovedregel i tre lag: et <strong>realkreditlån</strong> på op
+          til 80 % af boligens værdi, et <strong>banklån</strong> på op til 15 % — og en
+          <strong>udbetaling</strong> på mindst 5 %, som du selv skal have sparet op. Beregneren
+          ovenfor følger den fordeling.
+        </p>
+        <p>
+          De to lånetyper har forskellige vilkår: realkreditlånet er det billigste lag, fordi boligen
+          ligger som sikkerhed, mens banklånet typisk har højere rente og kortere løbetid. Derfor
+          gælder en simpel sammenhæng: <strong>jo større udbetaling, jo mindre banklån — og jo
+          billigere samlet finansiering.</strong>
+        </p>
+
+        <h2>Hvad beregneren ikke viser</h2>
+        <p>
+          Den virkelige verden har flere poster: bidragssats på realkreditlånet, kursskæring, gebyrer
+          og forskellen mellem realkredit- og bankrente. Beregneren giver dig størrelsesordenen — de
+          præcise tal får du kun i konkrete tilbud. Vil du forstå bidragssats og lånetyper bedre,
+          så start med vores guide til at <a href="/omlaegge-realkreditlaan/">omlægge realkreditlån</a>,
+          hvor mekanikken bag realkreditlån er forklaret.
+        </p>
+
+        <div class="inline-cta">
+          <h3>Fra vejledende tal til rigtige tilbud</h3>
+          <p>Når du har en fornemmelse for tallene, er næste skridt at se, hvad bankerne faktisk vil tilbyde dig. Hos vores partner Mybanker kan du gratis indhente tilbud fra flere banker på én gang.</p>
+          <!-- TODO: Erstat href med Adtraction-trackinglink når godkendt -->
+          <a href="https://www.mybanker.dk/" rel="nofollow sponsored" target="_blank" class="btn-primary">Indhent rigtige tilbud →</a>
+          <p class="small-note">Du bliver sendt videre til vores samarbejdspartner Mybanker. Kredithjørnet modtager provision, hvis du går videre — det koster dig ikke ekstra.</p>
+        </div>
+
+      </div>
+    </article>
+
+    <section class="related section-warm">
+      <div class="container">
+        <h2>Læs også</h2>
+        <div class="card-grid card-grid-3">
+          <a href="/boliglaan-selvstaendig/" class="card">
+            <div class="icon-box">🏢</div>
+            <h3>Boliglån som selvstændig</h3>
+            <p>Når banken tøver trods sund økonomi.</p>
+            <span class="card-link">Læs guiden →</span>
+          </a>
+          <a href="/skifte-bank-boliglaan/" class="card">
+            <div class="icon-box">🏦</div>
+            <h3>Skifte bank med boliglån</h3>
+            <p>Processen trin for trin — og hvad det koster.</p>
+            <span class="card-link">Læs guiden →</span>
+          </a>
+          <a href="/omlaegge-realkreditlaan/" class="card">
+            <div class="icon-box">🔄</div>
+            <h3>Omlægge realkreditlån</h3>
+            <p>Hvornår kan en omlægning betale sig?</p>
+            <span class="card-link">Læs guiden →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+  (function () {
+    var fmt = new Intl.NumberFormat('da-DK');
+    var pris = document.getElementById('pris');
+    var udb = document.getElementById('udbetaling');
+    var rente = document.getElementById('rente');
+    var aar = document.getElementById('loebetid');
+
+    function parseKr(el) {
+      var n = parseInt((el.value || '').replace(/[^0-9]/g, ''), 10);
+      return isNaN(n) ? 0 : n;
+    }
+    function kr(n) { return fmt.format(Math.round(n)) + ' kr.'; }
+
+    function beregn() {
+      var p = parseKr(pris);
+      var u = parseKr(udb);
+      var r = parseFloat(rente.value);
+      var n = parseInt(aar.value, 10);
+
+      document.getElementById('rente-vis').textContent = r.toFixed(1).replace('.', ',') + ' %';
+      document.getElementById('aar-vis').textContent = n + ' år';
+
+      var minUdb = p * 0.05;
+      var warn = document.getElementById('udb-warn');
+      warn.style.display = (p > 0 && u < minUdb) ? 'block' : 'none';
+      if (p > 0 && u < minUdb) {
+        warn.textContent = 'Lovens minimum er 5 % i udbetaling — det er ' + kr(minUdb) + ' for denne bolig.';
+      }
+
+      var laanebehov = Math.max(p - u, 0);
+      var realkredit = Math.min(p * 0.80, laanebehov);
+      var banklaan = Math.max(laanebehov - realkredit, 0);
+
+      var i = (r / 100) / 12;
+      var m = n * 12;
+      var ydelse = laanebehov > 0 ? (i > 0 ? laanebehov * i / (1 - Math.pow(1 + i, -m)) : laanebehov / m) : 0;
+
+      document.getElementById('res-ydelse').textContent = laanebehov > 0 ? fmt.format(Math.round(ydelse)) : '0';
+      document.getElementById('res-realkredit').textContent = kr(realkredit);
+      document.getElementById('res-banklaan').textContent = kr(banklaan);
+      document.getElementById('res-udbetaling').textContent = kr(u);
+      document.getElementById('res-laan').textContent = kr(laanebehov);
+    }
+
+    function formatInput(el) {
+      var n = parseKr(el);
+      el.value = n ? fmt.format(n) : '';
+      beregn();
+    }
+
+    pris.addEventListener('input', function () { formatInput(pris); });
+    udb.addEventListener('input', function () { formatInput(udb); });
+    rente.addEventListener('input', beregn);
+    aar.addEventListener('input', beregn);
+    beregn();
+  })();
+  </script>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a href="/" class="nav-logo">Kredithjørnet<span class="dot"></span></a>
+          <p class="footer-tagline">Uafhængig guide til boligfinansiering — for situationer banken ikke håndterer godt.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Guides</h4>
+          <a href="/boliglaan-selvstaendig/">Boliglån som selvstændig</a>
+          <a href="/skifte-bank-boliglaan/">Skifte bank med boliglån</a>
+          <a href="/omlaegge-realkreditlaan/">Omlægge realkreditlån</a>
+          <a href="/boliglaan-beregner/">Boliglånsberegner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <a href="/om/">Om siden</a>
+          <a href="/privatlivspolitik/">Privatlivspolitik</a>
+          <a href="mailto:kontakt@kredithjornet.dk">Kontakt</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Kredithjørnet · Denne side er uafhængig og finansieret via affiliate-provision fra vores samarbejdspartnere. Kredithjørnet yder ikke finansiel rådgivning og er ikke boligkreditformidler — vi informerer og sender dig videre til relevante partnere.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
