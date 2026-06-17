@@ -26,6 +26,8 @@
       <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 12 5l8 7.5"/><path d="M7 11.5V20h10v-8.5"/><path d="M10 20v-5h4v5"/></svg></span>
       Kredithjørnet
     </a>
+    <button class="menu-toggle" type="button" aria-label="Åbn menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
     <nav class="nav-pill" aria-label="Primær navigation">
       <a href="/boliglaan-selvstaendig/" class="active">Selvstændig</a>
       <a href="/skifte-bank-boliglaan/">Skift bank</a>
@@ -37,6 +39,15 @@
       <span class="header-note">Gratis · uden login</span>
       <a class="btn btn-primary" href="#sammenlign">Sammenlign lån</a>
     </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobil navigation">
+      <a href="/boliglaan-selvstaendig/">Selvstændig</a>
+      <a href="/skifte-bank-boliglaan/">Skift bank</a>
+      <a href="/omlaegge-realkreditlaan/">Omlægning</a>
+      <a href="/boliglaan-beregner/">Beregner</a>
+      <a href="/om/">Om</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a class="mobile-menu-cta" href="/boliglaan-beregner/">Prøv beregneren</a>
+    </nav>
   </div>
 </header>
 
@@ -243,6 +254,28 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var toggles = document.querySelectorAll('.menu-toggle');
+  toggles.forEach(function(toggle){
+    var menu = document.getElementById(toggle.getAttribute('aria-controls'));
+    if(!menu) return;
+    function setOpen(open){
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('menu-open', open);
+    }
+    toggle.addEventListener('click', function(){
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    menu.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){ setOpen(false); });
+    });
+    document.addEventListener('keydown', function(event){
+      if(event.key === 'Escape') setOpen(false);
+    });
+  });
+})();
+</script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "03c361d9b6c24b2f8334faebb42b9b9c"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
