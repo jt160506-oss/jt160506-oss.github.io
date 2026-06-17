@@ -75,8 +75,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .site-header{position:sticky;top:0;z-index:100;background:rgba(8,26,51,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.09)}
 .header-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative}
 .brand{display:inline-flex;align-items:center;gap:11px;color:#fff;font-size:19px;font-weight:700}
-.brand-mark{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:11px;color:#052019;background:linear-gradient(150deg,var(--green),var(--green-2));box-shadow:0 10px 24px -14px rgba(24,199,137,.9)}
-.brand-mark svg{width:20px;height:20px}
+.brand-mark{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:11px;overflow:hidden;box-shadow:0 10px 24px -14px rgba(24,199,137,.9);flex:0 0 auto}
+.brand-mark img{width:100%;height:100%;display:block}
 .nav-pill{display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}
 .nav-pill a{color:rgba(255,255,255,.78);font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;transition:background .15s ease,color .15s ease}
 .nav-pill a:hover,.nav-pill a.active{color:#fff;background:rgba(255,255,255,.08)}
@@ -392,6 +392,7 @@ details.q .a{padding:0 22px 20px;font-size:15.5px;line-height:1.7;color:var(--te
   .guide-grid,.steps{gap:24px}
   .card,.step{padding:28px}
   .feature-body,.feature-art{padding:30px}
+  .feature-art{border-radius:18px;overflow:hidden}
   .how{padding-top:12px;padding-bottom:76px}
   .how-head{margin-bottom:34px}
   .tool{padding-top:0;padding-bottom:76px}
