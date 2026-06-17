@@ -350,7 +350,7 @@ details.q .a{padding:0 22px 20px;font-size:15.5px;line-height:1.7;color:var(--te
 }
 @media(max-width:560px){
   .wrap,.article-wrap{padding:0 18px}
-  .hero{padding:64px 0 56px}
+  .hero{padding:70px 0 64px}
   .hero h1{font-size:42px}
   .header-cta .btn{display:none}
   .hero-cta .btn,.final-cta .btn,.inline-cta .row .btn{width:100%}
@@ -359,6 +359,42 @@ details.q .a{padding:0 22px 20px;font-size:15.5px;line-height:1.7;color:var(--te
   .tool-body,.feature-body,.tool-preview{padding:28px}
   .final-card{padding:48px 22px}
   .article-hero h1{font-size:32px}
+  .hero-grid{gap:36px}
+  .hero-cta{gap:16px;margin-top:34px}
+  .proof{gap:14px 22px;margin-top:34px}
+  .panel{padding:24px}
+  .section-grid{padding:76px 0;gap:38px}
+  .guide-grid,.steps{gap:24px}
+  .card,.step{padding:28px}
+  .feature-body,.feature-art{padding:30px}
+  .how{padding:12px 0 76px}
+  .how-head{margin-bottom:34px}
+  .tool{padding:0 0 76px}
+  .tool-card{gap:0}
+  .final{padding:0 0 82px}
+  .article-hero{padding:36px 0 64px}
+  .article-body{padding:50px 0 44px}
+  .who-box,.short-answer{padding:24px 22px;margin-bottom:30px}
+  .prose h2{margin-top:52px}
+  .prose h3{margin-top:34px}
+  .prose p{margin-top:18px}
+  .prose ul{gap:15px;margin-top:20px}
+  .scenarios{gap:22px;margin-top:28px}
+  .scenario{padding:24px}
+  .table-card,.example{margin-top:30px}
+  .related{margin-top:56px;padding:24px 20px}
+  .related-grid{gap:14px}
+  .related a{padding:16px}
+  .inline-cta{margin-top:50px;padding:30px 24px}
+  .inline-cta .row{gap:14px;margin-top:26px}
+  .faq{margin-top:56px}
+  details.q{margin-bottom:16px}
+  details.q summary{padding:20px}
+  details.q .a{padding:0 20px 22px}
+  .disclaimer{margin-top:48px;padding:22px 20px}
+  .site-footer{padding:64px 0 34px}
+  .footer-top{gap:38px;padding-bottom:42px}
+  .fcol ul{gap:14px}
 }
 @media(prefers-reduced-motion:reduce){
   *{transition:none!important;scroll-behavior:auto!important}

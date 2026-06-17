@@ -1,8 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#081A33"/>
-  <g fill="none" stroke="#18C789" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M14 33 32 16l18 17"/>
-    <path d="M20 30v20h24V30"/>
-    <path d="M28 50v-12h8v12"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kredithjørnet">
+  <defs>
+    <linearGradient id="bg" x1="10" y1="6" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E2749"/>
+      <stop offset="1" stop-color="#061327"/>
+    </linearGradient>
+    <linearGradient id="green" x1="17" y1="14" x2="48" y2="53" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1FE29D"/>
+      <stop offset="1" stop-color="#0EA66F"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <path d="M12 50 50 12h8v8L20 58h-8z" fill="#18C789" opacity=".14"/>
+  <path d="M16 34 32 19l16 15" fill="none" stroke="url(#green)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21.5 32.5v17h21v-17" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M29 49.5v-10h6v10" fill="none" stroke="url(#green)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
