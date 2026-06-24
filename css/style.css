@@ -474,3 +474,33 @@ details.q .a{padding:0 22px 20px;font-size:15.5px;line-height:1.7;color:var(--te
   .calc-tool{grid-template-columns:1fr}
   .calc-inputs{border-right:0;border-bottom:1px solid var(--border)}
 }
+
+/* ============================================================
+   KONVERTERINGSBEREGNER
+   ============================================================ */
+.convert-tool{display:grid;grid-template-columns:1.12fr .88fr;gap:0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);background:#fff;margin:8px 0 44px}
+.convert-inputs{display:grid;gap:0;background:#fff}
+.convert-panel{padding:30px;border-bottom:1px solid var(--border)}
+.convert-panel:last-child{border-bottom:0}
+.convert-panel h2{font-size:16px;font-family:var(--sans);font-weight:700;letter-spacing:0;margin:0 0 18px}
+.convert-results{padding:30px;background:linear-gradient(160deg,#081A33,#0C2748);color:#fff}
+.convert-results .res-label{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--green)}
+.convert-badge{display:inline-flex;margin-top:12px;border:1px solid rgba(24,199,137,.42);background:rgba(24,199,137,.13);color:var(--green);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.metric-main{margin-top:20px;padding:20px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);border-radius:16px}
+.metric-main span,.metric span{display:block;font-size:12.5px;font-weight:700;color:rgba(255,255,255,.62);letter-spacing:.02em}
+.metric-main b{display:block;font-family:var(--serif);font-size:32px;line-height:1.1;color:var(--green);margin-top:8px}
+.metric-main b.negative{color:var(--gold)}
+.metric-main small{display:block;color:rgba(255,255,255,.62);font-size:12px;line-height:1.45;margin-top:6px}
+.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.metric{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.045);border-radius:14px;padding:14px}
+.metric b{display:block;font-family:var(--serif);font-size:18px;color:#fff;margin-top:6px;line-height:1.2}
+#paymentDiff.negative{color:var(--gold)}
+
+@media(max-width:860px){
+  .convert-tool{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .convert-panel,.convert-results{padding:24px 20px}
+  .metric-grid{grid-template-columns:1fr}
+  .metric-main b{font-size:28px}
+}
