@@ -1,0 +1,28 @@
+HELE DIT SITE MED NY NAVIGATION
+===============================
+Denne pakke ER hele dit site, som det ser ud live lige nu, PLUS:
+- "Beregner" i menuen er nu en dropdown med begge beregnere
+  (Boliglånsberegner + Konverteringsberegner) — på alle sider.
+- Footeren linker nu til de nye sider (svingende indkomst, nedkonvertering,
+  opkonvertering, konverteringsberegner) — på alle sider.
+- Selvstændig-siden linker til "svingende indkomst".
+- En enkelt CSS-regel til dropdownen er tilføjet i css/style.css.
+
+Fordi pakken er HELE dit site (ikke løse filer), er det sikkert at overskrive:
+alt det, du har i forvejen, er med — der forsvinder ikke noget.
+
+SÅDAN (GitHub Desktop)
+1. Pak zip'en ud.
+2. Marker ALT indhold i den udpakkede mappe og kopiér det ind i din repo-mappe.
+   Vælg "Erstat" til alt. (Rør IKKE den skjulte .git-mappe — den ligger i repoet
+   og er ikke med i zip'en, så den forbliver urørt.)
+3. Åbn GitHub Desktop. I "Changes" kan du nu SE præcis hvilke filer der er ændret
+   — det er dit overblik. Kig det igennem hvis du vil.
+4. Commit + push.
+
+VIGTIGT: Pakken er bygget ud fra din SENESTE pushede version. Hvis du har lavet
+lokale ændringer siden sidste push, som du ikke har pushet, så sig til først.
+
+BEMÆRK: Mappen konvertering-realkreditlaan er stadig med (uændret). Det er den
+dublet-beregner, vi talte om. Når du er klar, kan vi fjerne den, så den ikke
+konkurrerer med din nye konverteringsberegner.
